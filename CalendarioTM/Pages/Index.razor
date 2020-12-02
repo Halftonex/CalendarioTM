@@ -2,17 +2,17 @@
 
 <p @onkeyup="FromGregorianKeyup">
     Calendario Gregoriano<br>
-    <input type="number" @bind="_day" min="1" max="31" />
-    <input type="number" @bind="_month" min="1" max="12" />
-    <input type="number" @bind="_year" min="1737" max="3000" />
+    <input type="number" @bind="_day" min="1" max="31" style="width:62px" />
+    <input type="number" @bind="_month" min="1" max="12" style="width:62px" />
+    <input type="number" @bind="_year" min="1737" max="3000" style="width:81px" />
     <button class="btn btn-primary" @onclick="FromGregorian">Traduci</button><br>
     <div style="display: inline-block;" @onclick="CopyGregorianToClipboard">@_gregorianString</div>
 </p>
 <p @onkeyup="FromImperialKeyup">
     Conta Imperiale<br>
-    <input type="number" @bind="_dayIC" min="1" max="31" />
-    <input type="number" @bind="_monthIC" min="1" max="12" />
-    <input type="number" @bind="_yearIC" min="1" max="1264" />
+    <input type="number" @bind="_dayIC" min="1" max="31" style="width:62px" />
+    <input type="number" @bind="_monthIC" min="1" max="12" style="width:62px" />
+    <input type="number" @bind="_yearIC" min="1" max="1264" style="width:81px" />
     <button class="btn btn-primary" @onclick="FromImperial">Traduci</button><br>
     <div style="display: inline-block;" @onclick="CopyImperialToClipboard">@_imperialString</div>
 </p>
@@ -22,10 +22,10 @@
 </p>
 <p @onkeyup="FromElvenKeyup">
     Onótië Quenya<br>
-    <input type="number" @bind="_dayE" min="1" max="30" />
-    <input type="number" @bind="_monthE" min="1" max="13" />
-    <input type="number" @bind="_partE" min="1" max="78" />
-    <input type="number" @bind="_bloomE" min="1" max="39" />
+    <input type="number" @bind="_dayE" min="1" max="30" style="width:50px" />
+    <input type="number" @bind="_monthE" min="1" max="13" style="width:50px" />
+    <input type="number" @bind="_partE" min="1" max="78" style="width:50px" />
+    <input type="number" @bind="_bloomE" min="1" max="39" style="width:50px" />
     <button class="btn btn-primary" @onclick="FromElven">Traduci</button><br>
     <div style="display: inline-block;" @onclick="CopyQuenyaToClipboard">@_quenyaString</div>
 </p>
