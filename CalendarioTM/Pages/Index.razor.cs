@@ -25,6 +25,8 @@ namespace CalendarioTM.Pages
         private int _yearIC;
         private string _imperialString;
 
+        private string _qwaylarString;
+
         private int _dayE;
         private int _monthE;
         private int _partE;
@@ -56,6 +58,7 @@ namespace CalendarioTM.Pages
 
                 UpdateGregorianString();
                 UpdateImperialString();
+                UpdateQwaylarString();
                 UpdateQuenyaString();
                 UpdateSindarString();
             }
@@ -141,6 +144,11 @@ namespace CalendarioTM.Pages
             _imperialString = $"{_dayIC} {ImperialMonths[_monthIC]} {_yearIC}";
         }
 
+        private void UpdateQwaylarString()
+        {
+            _qwaylarString = $"{_dayIC} {QwaylarMonths[_monthIC]} {_yearIC}";
+        }
+
         private void UpdateQuenyaString()
         {
             _quenyaString = $"{_dayE} {QuenyaMonths[_monthE]} {_partE}^ parte della {_bloomE}^ Fioritura";
@@ -153,6 +161,7 @@ namespace CalendarioTM.Pages
 
         private void CopyGregorianToClipboard() => CopyToClipboard(_gregorianString);
         private void CopyImperialToClipboard() => CopyToClipboard(_imperialString);
+        private void CopyQwaylarToClipboard() => CopyToClipboard(_qwaylarString);
         private void CopyQuenyaToClipboard() => CopyToClipboard(_quenyaString);
         private void CopySindarToClipboard() => CopyToClipboard(_sindarString);
 

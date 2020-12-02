@@ -39,6 +39,22 @@ namespace CalendarioTM.Pages
             [12] = "Dodecabrullo"
         };
 
+        public static readonly Dictionary<int, string> QwaylarMonths = new Dictionary<int, string>()
+        {
+            [1] = "Xochipilli",
+            [2] = "Tonatiuh",
+            [3] = "Oxossi",
+            [4] = "Snu Snu",
+            [5] = "Mami Wata",
+            [6] = "Gu",
+            [7] = "Shoixal/Lhuixal",
+            [8] = "Figli di Mawu/Naa'har",
+            [9] = "Mami Tata",
+            [10] = "Xangò",
+            [11] = "Hebieso",
+            [12] = "Sakapta"
+        };
+
         public static readonly Dictionary<int, string> QuenyaMonths = new Dictionary<int, string>()
         {
             [1] = "Narvinyë",

@@ -16,6 +16,10 @@
     <button class="btn btn-primary" @onclick="FromImperial">Traduci</button><br>
     <div style="display: inline-block;" @onclick="CopyImperialToClipboard">@_imperialString</div>
 </p>
+<p>
+    Calendario Qwaylar<br>
+    <div style="display: inline-block;" @onclick="CopyQwaylarToClipboard">@_qwaylarString</div>
+</p>
 <p @onkeyup="FromElvenKeyup">
     Onótië Quenya<br>
     <input type="number" @bind="_dayE" min="1" max="30" />
@@ -27,11 +31,6 @@
 </p>
 <p @onkeyup="FromElvenKeyup">
     Genediad Sindar<br>
-    <input type="number" @bind="_dayE" min="1" max="30" />
-    <input type="number" @bind="_monthE" min="1" max="30" />
-    <input type="number" @bind="_partE" min="1" max="78" />
-    <input type="number" @bind="_bloomE" min="1" max="39" />
-    <button class="btn btn-primary" @onclick="FromElven">Traduci</button><br>
     <div style="display: inline-block;" @onclick="CopySindarToClipboard">@_sindarString</div>
 </p>
 <p style="color:darkred">
