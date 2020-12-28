@@ -55,6 +55,22 @@ namespace CalendarioTM.Pages
             [12] = "Sakapta"
         };
 
+        public static readonly Dictionary<int, string> DwarvenMonths = new Dictionary<int, string>()
+        {
+            [1] = "Cot",
+            [2] = "Zert",
+            [3] = "Drenat",
+            [4] = "Formeghet",
+            [5] = "Puste",
+            [6] = "Hug",
+            [7] = "Wqut",
+            [8] = "Ytor",
+            [9] = "Jnust",
+            [10] = "Morgat",
+            [11] = "Archon",
+            [12] = "\"Gridopossente\""
+        };
+
         public static readonly Dictionary<int, string> QuenyaMonths = new Dictionary<int, string>()
         {
             [1] = "Narvinyë",

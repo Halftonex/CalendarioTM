@@ -26,6 +26,7 @@ namespace CalendarioTM.Pages
         private string _imperialString;
 
         private string _qwaylarString;
+        private string _dwarvenString;
 
         private int _dayE;
         private int _monthE;
@@ -34,10 +35,7 @@ namespace CalendarioTM.Pages
         private string _quenyaString;
         private string _sindarString;
 
-        protected override void OnInitialized()
-        {
-            FromGregorian();
-        }
+        protected override void OnInitialized() => FromGregorian();
 
         private void SetError(string text)
         {
@@ -59,6 +57,7 @@ namespace CalendarioTM.Pages
                 UpdateGregorianString();
                 UpdateImperialString();
                 UpdateQwaylarString();
+                UpdateDwarvenString();
                 UpdateQuenyaString();
                 UpdateSindarString();
             }
@@ -149,6 +148,11 @@ namespace CalendarioTM.Pages
             _qwaylarString = $"{_dayIC} {QwaylarMonths[_monthIC]} {_yearIC}";
         }
 
+        private void UpdateDwarvenString()
+        {
+            _dwarvenString = $"{_dayIC} {DwarvenMonths[_monthIC]} {_yearIC + 3965}";
+        }
+
         private void UpdateQuenyaString()
         {
             _quenyaString = $"{_dayE} {QuenyaMonths[_monthE]} {_partE}^ parte della {_bloomE}^ Fioritura";
@@ -162,6 +166,7 @@ namespace CalendarioTM.Pages
         private void CopyGregorianToClipboard() => CopyToClipboard(_gregorianString);
         private void CopyImperialToClipboard() => CopyToClipboard(_imperialString);
         private void CopyQwaylarToClipboard() => CopyToClipboard(_qwaylarString);
+        private void CopyDwarvenToClipboard() => CopyToClipboard(_dwarvenString);
         private void CopyQuenyaToClipboard() => CopyToClipboard(_quenyaString);
         private void CopySindarToClipboard() => CopyToClipboard(_sindarString);
 
