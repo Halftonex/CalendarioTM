@@ -129,7 +129,7 @@ namespace CalendarioTM.Pages
                 if (bloom >= 22)
                 { return bloom * 78 + part + 297; }
                 else
-                { return bloom * 78 + part + 336; }
+                { return bloom * 78 + part + 335; }
             }
         }
 
