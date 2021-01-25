@@ -130,7 +130,7 @@ namespace CalendarioTM.Pages
             }
             else
             {
-                int part = (gregorian.Year - 337) % 78 + 1;
+                int part = (gregorian.Year + 2074) % 78 + 1;
                 return (bloom, part, month, day);
             }
         }
